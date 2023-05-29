@@ -1,0 +1,166 @@
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 95vh;
+  background-color: hsl(210, 46%, 95%);
+}
+main {
+  display: grid;
+  grid-template-columns: 210px 269px auto 210px;
+  gap: 30px;
+}
+.card_one {
+  width: 470px;
+  background-color: hsl(263, 55%, 52%);
+  padding: 25px;
+  border-radius: 7px;
+  grid-column: 1 / span 2;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 81%);
+  width: 30px;
+  height: 30px;
+}
+.profile h2 {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+}
+.profile p {
+  margin-top: 0;
+  color: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+.profile div + div {
+  margin-left: 10px;
+}
+.text h1 {
+  color: white;
+  font-weight: 500;
+  width: 435px;
+}
+.text p {
+  color: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+.card_two {
+  background-color: hsl(217, 19%, 35%);
+  width: 210px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.text_two h1 {
+  color: white;
+  font-weight: 500;
+}
+.text_two p {
+  color: hsl(210, 46%, 95%);
+  font-size: 13px;
+  width: 185px;
+}
+.card_three {
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px;
+  width: 170px;
+  grid-column: 1;
+}
+.text_three h1 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 500;
+}
+.text_three p {
+  color: hsl(0, 0%, 81%);
+}
+.card_four {
+  background-color: hsl(219, 29%, 14%);
+  padding: 20px;
+  border-radius: 7px;
+  width: 490px;
+}
+.text_four h1 {
+  color: white;
+  font-weight: 500;
+}
+.text_four p {
+  color: hsl(0, 0%, 81%);
+}
+.card_five {
+  background-color: white;
+  border-radius: 7px;
+  width: 230px;
+  padding: 20px;
+  grid-row: 1 / span 2;
+  grid-column: 4;
+}
+.text_five h1 {
+  color: hsl(219, 29%, 14%);
+}
+.text_five p {
+  color: hsl(0, 0%, 81%);
+  width: 185px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    grid-template-columns: auto;
+    width: 100%;
+    place-items: center;
+  }
+  .card_one {
+    width: 70%;
+    grid-column: 1;
+  }
+  .text h1 {
+    width: 233px;
+  }
+  .text p {
+    width: 248px;
+  }
+  .card_two {
+    width: 77%;
+    grid-row: 2;
+  }
+  .text_two h1 {
+    width: 230px;
+  }
+  .text_two p {
+    width: 267px;
+  }
+  .card_three {
+    width: 70%;
+    grid-row: 3;
+  }
+  .text_three h1 {
+    width: 185px;
+  }
+  .text_three p {
+    width: 235px;
+  }
+  .card_four {
+    width: 70%;
+    grid-row: 4;
+  }
+  .text_four h1 {
+    width: 239px;
+  }
+  .text_four p {
+    width: 242px;
+  }
+  .card_five {
+    grid-column: -2;
+    grid-row: 5;
+    width: 70%;
+  }
+  .text_five p {
+    width: 241px;
+  }
+}
